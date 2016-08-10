@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F029BCCE1D4B250700138CFD /* Squirtle.png in Resources */ = {isa = PBXBuildFile; fileRef = F029BCCD1D4B250700138CFD /* Squirtle.png */; };
+		F071E7D71D401D7900B97B9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071E7D61D401D7900B97B9A /* AppDelegate.swift */; };
+		F071E7D91D401D7900B97B9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071E7D81D401D7900B97B9A /* ViewController.swift */; };
+		F071E7DE1D401D7900B97B9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F071E7DD1D401D7900B97B9A /* Assets.xcassets */; };
+		F071E7E11D401D7900B97B9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F071E7DF1D401D7900B97B9A /* LaunchScreen.storyboard */; };
+		F071E7EC1D401D7900B97B9A /* GOfinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071E7EB1D401D7900B97B9A /* GOfinderTests.swift */; };
+		F071E7F71D401D7900B97B9A /* GOfinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071E7F61D401D7900B97B9A /* GOfinderUITests.swift */; };
+		F071E8061D40230300B97B9A /* pokeball.png in Resources */ = {isa = PBXBuildFile; fileRef = F071E8051D40230300B97B9A /* pokeball.png */; };
+		F071E8091D40296000B97B9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F071E8071D40296000B97B9A /* Main.storyboard */; };
+		F071E80B1D40359000B97B9A /* Gofinder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F071E80A1D40358F00B97B9A /* Gofinder.jpg */; };
+		F071E80D1D4073DA00B97B9A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F071E80C1D4073DA00B97B9A /* CoreLocation.framework */; };
+		F071E8111D408A6000B97B9A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071E8101D408A6000B97B9A /* TableViewController.swift */; };
+		F088B8641D4DF8C00092862C /* MapData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F088B8621D4DF8C00092862C /* MapData.xcdatamodeld */; };
+		F088B8671D4DFE7A0092862C /* Pokemons+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F088B8651D4DFE7A0092862C /* Pokemons+CoreDataProperties.swift */; };
+		F088B8681D4DFE7A0092862C /* Pokemons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F088B8661D4DFE7A0092862C /* Pokemons.swift */; };
+		F088B86A1D4DFF060092862C /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F088B8691D4DFF060092862C /* DataController.swift */; };
+		F0DECAEB1D4F0C0700480C23 /* LocationVCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DECAEA1D4F0C0700480C23 /* LocationVCard.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F071E7E81D401D7900B97B9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F071E7CB1D401D7900B97B9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F071E7D21D401D7900B97B9A;
+			remoteInfo = GOfinder;
+		};
+		F071E7F31D401D7900B97B9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F071E7CB1D401D7900B97B9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F071E7D21D401D7900B97B9A;
+			remoteInfo = GOfinder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F029BCCD1D4B250700138CFD /* Squirtle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Squirtle.png; path = ../../Squirtle.png; sourceTree = "<group>"; };
+		F071E7D31D401D7900B97B9A /* GOfinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GOfinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F071E7D61D401D7900B97B9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F071E7D81D401D7900B97B9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F071E7DD1D401D7900B97B9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F071E7E01D401D7900B97B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F071E7E21D401D7900B97B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F071E7E71D401D7900B97B9A /* GOfinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GOfinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F071E7EB1D401D7900B97B9A /* GOfinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOfinderTests.swift; sourceTree = "<group>"; };
+		F071E7ED1D401D7900B97B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F071E7F21D401D7900B97B9A /* GOfinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GOfinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F071E7F61D401D7900B97B9A /* GOfinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOfinderUITests.swift; sourceTree = "<group>"; };
+		F071E7F81D401D7900B97B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F071E8051D40230300B97B9A /* pokeball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pokeball.png; path = ../../pokeball.png; sourceTree = "<group>"; };
+		F071E8081D40296000B97B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F071E80A1D40358F00B97B9A /* Gofinder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Gofinder.jpg; path = ../../Gofinder.jpg; sourceTree = "<group>"; };
+		F071E80C1D4073DA00B97B9A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F071E8101D408A6000B97B9A /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		F088B8631D4DF8C00092862C /* MapData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MapData.xcdatamodel; sourceTree = "<group>"; };
+		F088B8651D4DFE7A0092862C /* Pokemons+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pokemons+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F088B8661D4DFE7A0092862C /* Pokemons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemons.swift; sourceTree = "<group>"; };
+		F088B8691D4DFF060092862C /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		F0DECAEA1D4F0C0700480C23 /* LocationVCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationVCard.swift; path = "../../../../Downloads/9a13a6653ba16f8347e45f4855a71cf5-9f459884c7d3460209f3bfd93e1fa8c8ad177606/LocationVCard.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F071E7D01D401D7900B97B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F071E80D1D4073DA00B97B9A /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F071E7E41D401D7900B97B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F071E7EF1D401D7900B97B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F071E7CA1D401D7900B97B9A = {
+			isa = PBXGroup;
+			children = (
+				F088B8651D4DFE7A0092862C /* Pokemons+CoreDataProperties.swift */,
+				F088B8661D4DFE7A0092862C /* Pokemons.swift */,
+				F071E80C1D4073DA00B97B9A /* CoreLocation.framework */,
+				F071E7D51D401D7900B97B9A /* GOfinder */,
+				F071E7EA1D401D7900B97B9A /* GOfinderTests */,
+				F071E7F51D401D7900B97B9A /* GOfinderUITests */,
+				F071E7D41D401D7900B97B9A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F071E7D41D401D7900B97B9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F071E7D31D401D7900B97B9A /* GOfinder.app */,
+				F071E7E71D401D7900B97B9A /* GOfinderTests.xctest */,
+				F071E7F21D401D7900B97B9A /* GOfinderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F071E7D51D401D7900B97B9A /* GOfinder */ = {
+			isa = PBXGroup;
+			children = (
+				F0DECAEA1D4F0C0700480C23 /* LocationVCard.swift */,
+				F029BCCD1D4B250700138CFD /* Squirtle.png */,
+				F071E8041D40226000B97B9A /* Images */,
+				F071E7D61D401D7900B97B9A /* AppDelegate.swift */,
+				F071E7D81D401D7900B97B9A /* ViewController.swift */,
+				F071E8101D408A6000B97B9A /* TableViewController.swift */,
+				F071E8071D40296000B97B9A /* Main.storyboard */,
+				F071E7DD1D401D7900B97B9A /* Assets.xcassets */,
+				F071E7DF1D401D7900B97B9A /* LaunchScreen.storyboard */,
+				F071E7E21D401D7900B97B9A /* Info.plist */,
+				F088B8621D4DF8C00092862C /* MapData.xcdatamodeld */,
+				F088B8691D4DFF060092862C /* DataController.swift */,
+			);
+			path = GOfinder;
+			sourceTree = "<group>";
+		};
+		F071E7EA1D401D7900B97B9A /* GOfinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				F071E7EB1D401D7900B97B9A /* GOfinderTests.swift */,
+				F071E7ED1D401D7900B97B9A /* Info.plist */,
+			);
+			path = GOfinderTests;
+			sourceTree = "<group>";
+		};
+		F071E7F51D401D7900B97B9A /* GOfinderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F071E7F61D401D7900B97B9A /* GOfinderUITests.swift */,
+				F071E7F81D401D7900B97B9A /* Info.plist */,
+			);
+			path = GOfinderUITests;
+			sourceTree = "<group>";
+		};
+		F071E8041D40226000B97B9A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F071E80A1D40358F00B97B9A /* Gofinder.jpg */,
+				F071E8051D40230300B97B9A /* pokeball.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F071E7D21D401D7900B97B9A /* GOfinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F071E7FB1D401D7900B97B9A /* Build configuration list for PBXNativeTarget "GOfinder" */;
+			buildPhases = (
+				F071E7CF1D401D7900B97B9A /* Sources */,
+				F071E7D01D401D7900B97B9A /* Frameworks */,
+				F071E7D11D401D7900B97B9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GOfinder;
+			productName = GOfinder;
+			productReference = F071E7D31D401D7900B97B9A /* GOfinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F071E7E61D401D7900B97B9A /* GOfinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F071E7FE1D401D7900B97B9A /* Build configuration list for PBXNativeTarget "GOfinderTests" */;
+			buildPhases = (
+				F071E7E31D401D7900B97B9A /* Sources */,
+				F071E7E41D401D7900B97B9A /* Frameworks */,
+				F071E7E51D401D7900B97B9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F071E7E91D401D7900B97B9A /* PBXTargetDependency */,
+			);
+			name = GOfinderTests;
+			productName = GOfinderTests;
+			productReference = F071E7E71D401D7900B97B9A /* GOfinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F071E7F11D401D7900B97B9A /* GOfinderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F071E8011D401D7900B97B9A /* Build configuration list for PBXNativeTarget "GOfinderUITests" */;
+			buildPhases = (
+				F071E7EE1D401D7900B97B9A /* Sources */,
+				F071E7EF1D401D7900B97B9A /* Frameworks */,
+				F071E7F01D401D7900B97B9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F071E7F41D401D7900B97B9A /* PBXTargetDependency */,
+			);
+			name = GOfinderUITests;
+			productName = GOfinderUITests;
+			productReference = F071E7F21D401D7900B97B9A /* GOfinderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F071E7CB1D401D7900B97B9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = christonan;
+				TargetAttributes = {
+					F071E7D21D401D7900B97B9A = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = DE7P7G6ZMK;
+					};
+					F071E7E61D401D7900B97B9A = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = DE7P7G6ZMK;
+						TestTargetID = F071E7D21D401D7900B97B9A;
+					};
+					F071E7F11D401D7900B97B9A = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = DE7P7G6ZMK;
+						TestTargetID = F071E7D21D401D7900B97B9A;
+					};
+				};
+			};
+			buildConfigurationList = F071E7CE1D401D7900B97B9A /* Build configuration list for PBXProject "GOfinder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F071E7CA1D401D7900B97B9A;
+			productRefGroup = F071E7D41D401D7900B97B9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F071E7D21D401D7900B97B9A /* GOfinder */,
+				F071E7E61D401D7900B97B9A /* GOfinderTests */,
+				F071E7F11D401D7900B97B9A /* GOfinderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F071E7D11D401D7900B97B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F071E7E11D401D7900B97B9A /* LaunchScreen.storyboard in Resources */,
+				F071E8061D40230300B97B9A /* pokeball.png in Resources */,
+				F071E80B1D40359000B97B9A /* Gofinder.jpg in Resources */,
+				F029BCCE1D4B250700138CFD /* Squirtle.png in Resources */,
+				F071E7DE1D401D7900B97B9A /* Assets.xcassets in Resources */,
+				F071E8091D40296000B97B9A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F071E7E51D401D7900B97B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F071E7F01D401D7900B97B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F071E7CF1D401D7900B97B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F088B86A1D4DFF060092862C /* DataController.swift in Sources */,
+				F088B8671D4DFE7A0092862C /* Pokemons+CoreDataProperties.swift in Sources */,
+				F088B8681D4DFE7A0092862C /* Pokemons.swift in Sources */,
+				F088B8641D4DF8C00092862C /* MapData.xcdatamodeld in Sources */,
+				F071E7D91D401D7900B97B9A /* ViewController.swift in Sources */,
+				F071E8111D408A6000B97B9A /* TableViewController.swift in Sources */,
+				F071E7D71D401D7900B97B9A /* AppDelegate.swift in Sources */,
+				F0DECAEB1D4F0C0700480C23 /* LocationVCard.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F071E7E31D401D7900B97B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F071E7EC1D401D7900B97B9A /* GOfinderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F071E7EE1D401D7900B97B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F071E7F71D401D7900B97B9A /* GOfinderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F071E7E91D401D7900B97B9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F071E7D21D401D7900B97B9A /* GOfinder */;
+			targetProxy = F071E7E81D401D7900B97B9A /* PBXContainerItemProxy */;
+		};
+		F071E7F41D401D7900B97B9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F071E7D21D401D7900B97B9A /* GOfinder */;
+			targetProxy = F071E7F31D401D7900B97B9A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F071E7DF1D401D7900B97B9A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F071E7E01D401D7900B97B9A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F071E8071D40296000B97B9A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F071E8081D40296000B97B9A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F071E7F91D401D7900B97B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F071E7FA1D401D7900B97B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F071E7FC1D401D7900B97B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GOfinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.christonan.GOfinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F071E7FD1D401D7900B97B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GOfinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.christonan.GOfinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F071E7FF1D401D7900B97B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GOfinderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.christonan.GOfinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GOfinder.app/GOfinder";
+			};
+			name = Debug;
+		};
+		F071E8001D401D7900B97B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GOfinderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.christonan.GOfinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GOfinder.app/GOfinder";
+			};
+			name = Release;
+		};
+		F071E8021D401D7900B97B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GOfinderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.christonan.GOfinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GOfinder;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F071E8031D401D7900B97B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GOfinderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.christonan.GOfinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GOfinder;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F071E7CE1D401D7900B97B9A /* Build configuration list for PBXProject "GOfinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F071E7F91D401D7900B97B9A /* Debug */,
+				F071E7FA1D401D7900B97B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F071E7FB1D401D7900B97B9A /* Build configuration list for PBXNativeTarget "GOfinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F071E7FC1D401D7900B97B9A /* Debug */,
+				F071E7FD1D401D7900B97B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F071E7FE1D401D7900B97B9A /* Build configuration list for PBXNativeTarget "GOfinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F071E7FF1D401D7900B97B9A /* Debug */,
+				F071E8001D401D7900B97B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F071E8011D401D7900B97B9A /* Build configuration list for PBXNativeTarget "GOfinderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F071E8021D401D7900B97B9A /* Debug */,
+				F071E8031D401D7900B97B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F088B8621D4DF8C00092862C /* MapData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F088B8631D4DF8C00092862C /* MapData.xcdatamodel */,
+			);
+			currentVersion = F088B8631D4DF8C00092862C /* MapData.xcdatamodel */;
+			path = MapData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F071E7CB1D401D7900B97B9A /* Project object */;
+}

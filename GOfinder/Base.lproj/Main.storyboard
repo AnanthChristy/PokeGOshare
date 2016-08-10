@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GOfinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Xbg-ts-19O">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5j-uP-5g1">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="107" id="dw9-Bp-mZy"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="pokeball.png"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="dw9-Bp-mZy"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="dw9-Bp-mZy"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="PZc-i9-EQt" kind="show" id="imd-Te-sth"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SM9-Ze-OFI">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem id="DBa-6Q-35U" userLabel="Navigation Item">
+                                        <nil key="title"/>
+                                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="gNR-wc-vYz" userLabel="Map Type Segmented Control">
+                                            <rect key="frame" x="-60" y="-14" width="121" height="29"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="Map"/>
+                                                <segment title="Hybrid"/>
+                                                <segment title="Satellite"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="mapTypeChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="EQ1-Xs-mm7"/>
+                                            </connections>
+                                        </segmentedControl>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="mop-jR-CUt">
+                                            <connections>
+                                                <action selector="share:" destination="BYZ-38-t0r" id="FaL-Ub-Le8"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xbg-ts-19O" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="0O8-Cb-6qH"/>
+                            <constraint firstItem="SM9-Ze-OFI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="48Q-lZ-0nU"/>
+                            <constraint firstItem="SM9-Ze-OFI" firstAttribute="centerX" secondItem="T5j-uP-5g1" secondAttribute="centerX" id="6sJ-O7-cQJ"/>
+                            <constraint firstItem="SM9-Ze-OFI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XD6-m2-wpE">
+                                <variation key="widthClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstAttribute="bottom" secondItem="T5j-uP-5g1" secondAttribute="bottom" constant="20" symbolic="YES" id="dOf-di-aYv"/>
+                            <constraint firstAttribute="trailing" secondItem="SM9-Ze-OFI" secondAttribute="trailing" id="frm-WL-VhO"/>
+                            <constraint firstItem="Xbg-ts-19O" firstAttribute="top" secondItem="SM9-Ze-OFI" secondAttribute="bottom" id="gdZ-3w-ZI0">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="Xbg-ts-19O" firstAttribute="leading" secondItem="SM9-Ze-OFI" secondAttribute="leading" id="qRc-eS-Nr0"/>
+                            <constraint firstItem="Xbg-ts-19O" firstAttribute="trailing" secondItem="SM9-Ze-OFI" secondAttribute="trailing" id="rNh-tp-g90"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Xbg-ts-19O"/>
+                                <exclude reference="T5j-uP-5g1"/>
+                                <exclude reference="SM9-Ze-OFI"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="dOf-di-aYv"/>
+                                <exclude reference="48Q-lZ-0nU"/>
+                                <exclude reference="6sJ-O7-cQJ"/>
+                                <exclude reference="XD6-m2-wpE"/>
+                                <exclude reference="frm-WL-VhO"/>
+                                <exclude reference="0O8-Cb-6qH"/>
+                                <exclude reference="gdZ-3w-ZI0"/>
+                                <exclude reference="qRc-eS-Nr0"/>
+                                <exclude reference="rNh-tp-g90"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Xbg-ts-19O"/>
+                                <include reference="T5j-uP-5g1"/>
+                                <include reference="SM9-Ze-OFI"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="dOf-di-aYv"/>
+                                <include reference="48Q-lZ-0nU"/>
+                                <include reference="6sJ-O7-cQJ"/>
+                                <include reference="XD6-m2-wpE"/>
+                                <include reference="frm-WL-VhO"/>
+                                <include reference="0O8-Cb-6qH"/>
+                                <include reference="gdZ-3w-ZI0"/>
+                                <include reference="qRc-eS-Nr0"/>
+                                <include reference="rNh-tp-g90"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="mapTypeSegmentedControl" destination="gNR-wc-vYz" id="MgT-hc-m1K"/>
+                        <outlet property="mapView" destination="Xbg-ts-19O" id="4aC-Dg-Zi9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="169.5" y="389"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="J6r-KF-aqx">
+            <objects>
+                <tableViewController id="PZc-i9-EQt" customClass="TableViewController" customModule="GOfinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="03J-qC-fTb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="2pK-zB-WRb">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="Pokemon" id="66V-sR-Bgc">
+                                    <barButtonItem key="rightBarButtonItem" systemItem="add" id="37F-4Q-tmR">
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="newPlace" id="ZCD-TP-h8c"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </navigationItem>
+                            </items>
+                        </navigationBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="PAe-09-47G">
+                                <rect key="frame" x="0.0" y="72" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PAe-09-47G" id="kTz-xp-QtZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="HUB-Cj-cXT"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="PZc-i9-EQt" id="Oh5-uW-3T3"/>
+                            <outlet property="delegate" destination="PZc-i9-EQt" id="ONw-iH-lWa"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="biJ-vZ-m1Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1054.5" y="389"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pokeball.png" width="108" height="80"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ZCD-TP-h8c"/>
+    </inferredMetricsTieBreakers>
+</document>
